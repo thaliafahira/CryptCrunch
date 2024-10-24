@@ -34,6 +34,16 @@
             <source src="Audio/cort_infantilanimada_dm-248977.mp3">
             This browser does not support HTML 5 audios.
         </audio>
+
+        <button id="volume-button" class="volume-button">🔊 Volume</button>
+
+        <div id="volumePopup" class="volume-popup">
+            <h3>Adjust Volume</h3>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+            <span id="volume-value">100%</span>
+            <button id="close-volume-popup" class="close-volume">Close</button>
+        </div>
+
         
         <info-button id="info-button" class="info-button">📄</info-button>
          
@@ -156,6 +166,7 @@
     </div>
 
     <script src="./Home.js"></script>
+    
 </body>
 <footer>
     <p>&copy; 2024 Dinda Thalia Fahira. All rights reserved.</p>

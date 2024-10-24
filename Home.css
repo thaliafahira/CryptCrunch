@@ -11,6 +11,101 @@ footer {
     margin-bottom: 10px;
 }
 
+
+.volume-popup {
+    display: none;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    padding: 20px;
+    z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #FFF0D6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    font-family: 'Poppins';
+}
+
+.volume-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #018EC3;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.volume-button:hover {
+    background-color: #19b5ed;
+}
+
+#volume-slider {
+    width: 100%;
+    -webkit-appearance: none; /* Remove default appearance */
+    appearance: none;
+    height: 8px; /* Height of the slider track */
+    background: #B0749A; /* Track background color */
+    outline: none; /* Remove outline when focused */
+    border-radius: 5px; /* Round corners of the track */
+    opacity: 0.8; /* Opacity of the track */
+    transition: opacity 0.2s;
+}
+
+#volume-slider:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+/* Style the thumb (handle) */
+#volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default appearance */
+    appearance: none;
+    width: 20px; /* Width of the handle */
+    height: 20px; /* Height of the handle */
+    background: #B0749A; /* Handle color */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 50%; /* Make the handle circular */
+}
+
+/* Style for Firefox */
+#volume-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #B0749A;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Style the active (filled) part of the track */
+#volume-slider::-webkit-slider-runnable-track {
+    background: white; /* Track color */
+    border-radius: 5px;
+}
+
+
+.close-volume {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #EE6880;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: bold;
+
+}
+
+.close-volume:hover {
+    background-color: #f8aebc;
+}
 @media (max-width: 480px) { 
     footer {
     position: absolute;
@@ -24,6 +119,33 @@ footer {
     width: 100%;
     margin-bottom: 10px;
     }
+    volume-popup {
+        width: 50%;
+        bottom: 5%;
+        right: 5%;
+        padding: 15px;
+    }
+
+    .volume-button {
+        bottom: 30px;
+        right: 10px;
+        height: 7%;
+        width: 40%;
+        font-size: 16px;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #volume-slider {
+        width: 80%;
+    }
+
+    .close-volume {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    
 }
+
 
 
