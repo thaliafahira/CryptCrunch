@@ -122,6 +122,17 @@ button:active {
         width: 90%; 
         font-size: 14px; 
     }
+
+    .output {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    
+    .output p {
+        color: #EE6880;
+        font-weight: bold;
+    }
+
     .return-button {
         width: 40px;
         height: 40px; 
