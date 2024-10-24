@@ -23,11 +23,9 @@ document.getElementById('user-form').addEventListener('submit', function(e) {
     }
     
     if (age >= 0) {
-        // Hide the modal and show the buttons
         document.getElementById('userModal').style.display = 'none';
         document.getElementById('game-buttons').style.display = 'block';
     } else {
-        // Show error message
         document.getElementById('error-message').style.display = 'block';
     }
 });

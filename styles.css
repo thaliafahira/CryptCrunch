@@ -5,6 +5,20 @@ html, body {
     overflow: hidden;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #6c757d;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
 body {
     font-family: 'Poppins';
     background-image: url('images/Desktop - 1.png'); 
@@ -266,6 +280,8 @@ input[type="text"], input[type="date"], button {
     font-family: 'Poppins';
     font-weight: bold;
 }
+
+
 
 #successModal.popup {
     display: none; 
@@ -665,6 +681,18 @@ input[type="text"], input[type="date"], button {
         right: 10%;
         top: 50%;
         transform: translateX(5%);
+    }
+    footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 7px;
+    color: #6c757d;
+    width: 100%;
+    margin-bottom: 10px;
     }
 }
 

@@ -107,6 +107,19 @@ button:active {
     transform: translateY(0);
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #6c757d;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 600px) {
     body {
         padding: 10px; 
@@ -139,4 +152,17 @@ button:active {
         top: 15px;
         left: 15px;
     }
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 7px;
+        color: #6c757d;
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
+
