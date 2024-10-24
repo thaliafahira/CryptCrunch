@@ -112,7 +112,7 @@ input[type="text"], input[type="date"], button {
 }
 
 #start {
-    position: absolute;
+    position: fixed;
     bottom: 20%;
     right: 20%;
 }
