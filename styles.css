@@ -614,6 +614,11 @@ input[type="text"], input[type="date"], button {
 }
 
 @media (max-width: 480px) { 
+    body {
+        background-color: #E9F9FF;
+    }
+
+
     .page-with-different-background {
         background-image: url('images/desktop bg.png');
         background-size: cover;
