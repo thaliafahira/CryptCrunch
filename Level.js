@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (returnButton) {
         returnButton.addEventListener('click', function() {
-            window.location.href = 'Home.html';
+            window.location.href = 'index.html';
         });
     }
 
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
             homeBtn.onclick = function() {
                 modal.style.display = "none"; 
                 sessionStorage.setItem('currentLevel', 1);
-                window.location.href = "Home.html"; 
+                window.location.href = "index.html"; 
             };
         }
     }
