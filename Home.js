@@ -30,7 +30,6 @@ document.getElementById('user-form').addEventListener('submit', function(e) {
     }
 });
 
-// Get the elements
 const volumeButton = document.getElementById('volume-button');
 const volumePopup = document.getElementById('volumePopup');
 const closeVolumePopup = document.getElementById('close-volume-popup');
@@ -38,19 +37,20 @@ const volumeSlider = document.getElementById('volume-slider');
 const volumeValue = document.getElementById('volume-value');
 const audioElement = document.querySelector('audio');
 
-// Show the volume popup when the button is clicked
+window.onload = function() {
+    volumePopup.style.display = 'none';  
+};
+
 volumeButton.addEventListener('click', () => {
     volumePopup.style.display = 'block';
 });
 
-// Close the volume popup
 closeVolumePopup.addEventListener('click', () => {
     volumePopup.style.display = 'none';
 });
 
-// Adjust the audio volume and update the displayed percentage
 volumeSlider.addEventListener('input', (event) => {
     const volume = event.target.value;
-    audioElement.volume = volume;  // Set the audio volume
-    volumeValue.textContent = `${Math.round(volume * 100)}%`;  // Display the percentage
+    audioElement.volume = volume; 
+    volumeValue.textContent = `${Math.round(volume * 100)}%`;  
 });

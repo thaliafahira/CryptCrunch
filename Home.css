@@ -50,32 +50,30 @@ footer {
 
 #volume-slider {
     width: 100%;
-    -webkit-appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; 
     appearance: none;
-    height: 8px; /* Height of the slider track */
-    background: #B0749A; /* Track background color */
-    outline: none; /* Remove outline when focused */
-    border-radius: 5px; /* Round corners of the track */
-    opacity: 0.8; /* Opacity of the track */
+    height: 8px; 
+    background: #B0749A; 
+    outline: none; 
+    border-radius: 5px; 
+    opacity: 0.8; 
     transition: opacity 0.2s;
 }
 
 #volume-slider:hover {
-    opacity: 1; /* Full opacity on hover */
+    opacity: 1; 
 }
 
-/* Style the thumb (handle) */
 #volume-slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; 
     appearance: none;
-    width: 20px; /* Width of the handle */
-    height: 20px; /* Height of the handle */
-    background: #B0749A; /* Handle color */
-    cursor: pointer; /* Change cursor to pointer */
-    border-radius: 50%; /* Make the handle circular */
+    width: 20px; 
+    height: 20px; 
+    background: #B0749A; 
+    cursor: pointer;
+    border-radius: 50%; 
 }
 
-/* Style for Firefox */
 #volume-slider::-moz-range-thumb {
     width: 20px;
     height: 20px;
@@ -84,9 +82,8 @@ footer {
     border-radius: 50%;
 }
 
-/* Style the active (filled) part of the track */
 #volume-slider::-webkit-slider-runnable-track {
-    background: white; /* Track color */
+    background: white; 
     border-radius: 5px;
 }
 
